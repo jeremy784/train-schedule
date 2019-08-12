@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid bg-light background-color: background-color">
+        <div class="container">
+            <h1 class="title">Train Schedule</h1>
+            <p class="instructions">Input the Train Schedules You Would Like to See.</p>
+        </div>
+    </div>
+
+    <table class="table table-striped table-dark container jumobtron">
+        <thead>
+            <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (Mins)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody id="main-holder">
+
+        </tbody>
+    </table>
+
+    <form class="table-dark container jumbotron bg-dark">
+        <div class="container">
+            <h1>Train Submission Form</h1>
+            <h2 class="error">
+        </div>
+
+        <div class="form-group container">
+            <label for="formGroupExampleInput">Train Name</label>
+            <input type="text" class="form-control" id="train-name" placeholder="Train Name">
+        </div>
+
+        <div class="form-group container">
+            <label for="formGroupExampleInput2">Destination</label>
+            <input type="text" class="form-control" id="destination" placeholder="Train Destination">
+        </div>
+
+        <div class="form-group container">
+            <label for="formGroupExampleInput">First Train Time (hh:mm)</label>
+            <input type="text" class="form-control" id="first-train" placeholder="Enter time as hh:mm">
+        </div>
+
+        <div class="form-group container">
+            <label for="formGroupExampleInput2">Frequency (Mins)</label>
+            <input type="text" class="form-control" id="frequency" placeholder="Minutes">
+        </div>
+        <div class="container">
+            <button type="submit" class="btn btn-primary" id="submit-train">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</html>
