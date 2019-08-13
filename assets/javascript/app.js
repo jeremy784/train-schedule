@@ -1,12 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDt9EfSxQ7dUZbRfOvpJCbbAhS-S0q6UOA",
-    authDomain: "traintime-2bb84.firebaseapp.com",
-    databaseURL: "https://traintime-2bb84.firebaseio.com",
-    projectId: "traintime-2bb84",
-    storageBucket: "https://traintime-2bb84.firebaseio.com/",
-    messagingSenderId: "872420135779",
-    appId: "1:872420135779:web:38d8627d8af79e36"
-  };
+  apiKey: "AIzaSyB2Dg9Z-fYBVrWFGTQXOF1K3QPCJg4Of4U",
+  authDomain: "train-schedule-4284e.firebaseapp.com",
+  databaseURL: "https://train-schedule-4284e.firebaseio.com",
+  projectId: "train-schedule-4284e",
+  storageBucket: "https://train-schedule-4284e.firebaseio.com/",
+  messagingSenderId: "386099410767",
+  appId: "1:386099410767:web:0504ab4f85449969"
+};
   firebase.initializeApp(firebaseConfig);
   let database = firebase.database();
   let name = ""
